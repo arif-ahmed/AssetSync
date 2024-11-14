@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.CLI", "AssetSync.CLI\AssetSync.CLI.csproj", "{CD58CEB7-91FF-4DAE-B37B-17355CE87787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.Core", "AssetSync.Core\AssetSync.Core.csproj", "{70E4ED90-8BDA-40AD-8E01-D9C2499BE641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.Engine", "AssetSync.Engine\AssetSync.Engine.csproj", "{1572BE33-0BBC-4588-93A7-B1298AAC30B2}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD58CEB7-91FF-4DAE-B37B-17355CE87787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD58CEB7-91FF-4DAE-B37B-17355CE87787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD58CEB7-91FF-4DAE-B37B-17355CE87787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD58CEB7-91FF-4DAE-B37B-17355CE87787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E4ED90-8BDA-40AD-8E01-D9C2499BE641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E4ED90-8BDA-40AD-8E01-D9C2499BE641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E4ED90-8BDA-40AD-8E01-D9C2499BE641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E4ED90-8BDA-40AD-8E01-D9C2499BE641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1572BE33-0BBC-4588-93A7-B1298AAC30B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1572BE33-0BBC-4588-93A7-B1298AAC30B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1572BE33-0BBC-4588-93A7-B1298AAC30B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1572BE33-0BBC-4588-93A7-B1298AAC30B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

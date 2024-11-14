@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AssetSync.Core\AssetSync.Core.csproj" />
+    <ProjectReference Include="..\AssetSync.Engine\AssetSync.Engine.csproj" />
+  </ItemGroup>
+
 </Project>
