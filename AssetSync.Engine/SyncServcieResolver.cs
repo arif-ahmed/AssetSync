@@ -1,4 +1,6 @@
-﻿using AssetSync.Engine.Contracts;
+﻿
+using AssetSync.BrandshareDAMIntegration;
+using AssetSync.Core;
 
 namespace AssetSync.Engine
 {
@@ -6,7 +8,7 @@ namespace AssetSync.Engine
     {
         public ISyncService ResolveSyncService()
         {
-            return new SyncService();
+            return new ForwardSyncService();
         }
     }
 }

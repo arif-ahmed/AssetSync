@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.Core", "AssetSync
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.Engine", "AssetSync.Engine\AssetSync.Engine.csproj", "{1572BE33-0BBC-4588-93A7-B1298AAC30B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integrations", "Integrations", "{13F230E6-9BFE-4915-B817-CED9D592E16C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.BrandshareDAMIntegration", "AssetSync.BrandshareDAMIntegration\AssetSync.BrandshareDAMIntegration.csproj", "{FED748FB-5C26-41EE-8EB9-1AC256EBF112}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{1572BE33-0BBC-4588-93A7-B1298AAC30B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1572BE33-0BBC-4588-93A7-B1298AAC30B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1572BE33-0BBC-4588-93A7-B1298AAC30B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED748FB-5C26-41EE-8EB9-1AC256EBF112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED748FB-5C26-41EE-8EB9-1AC256EBF112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED748FB-5C26-41EE-8EB9-1AC256EBF112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED748FB-5C26-41EE-8EB9-1AC256EBF112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FED748FB-5C26-41EE-8EB9-1AC256EBF112} = {13F230E6-9BFE-4915-B817-CED9D592E16C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DE2D6F5-A3B1-4C25-B827-BA53E52C6F8F}

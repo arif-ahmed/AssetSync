@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AssetSync.BrandshareDAMIntegration\AssetSync.BrandshareDAMIntegration.csproj" />
+    <ProjectReference Include="..\AssetSync.Core\AssetSync.Core.csproj" />
+  </ItemGroup>
+
 </Project>

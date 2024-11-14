@@ -1,6 +1,6 @@
 ﻿
+using AssetSync.Core;
 using AssetSync.Engine;
-using AssetSync.Engine.Contracts;
 
 namespace AssetSync.CLI
 {
