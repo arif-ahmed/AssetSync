@@ -1,7 +1,9 @@
 ﻿
+using AssetSync.BrandshareDAMIntegration.Models;
+
 namespace AssetSync.BrandshareDAMIntegration
 {
-    public class BrandshareDAMManager : IBrandshareDAMService
+    public class BrandshareDAMService : IBrandshareDAMService
     {
         public void GetFiles(int pageSize, int pageLimit = 100)
         {
@@ -13,9 +15,10 @@ namespace AssetSync.BrandshareDAMIntegration
             throw new NotImplementedException();
         }
 
-        public void GetSyncJobs(string machineName)
+        public async Task<List<SyncJobDTO>> GetSyncJobs(string machineName)
         {
-            throw new NotImplementedException();
+            var syncJobs = new List<SyncJobDTO> { };
+            return await Task.FromResult(syncJobs);
         }
 
         public void GetVolumes(string jobId)
@@ -25,7 +28,7 @@ namespace AssetSync.BrandshareDAMIntegration
 
         public void TestConnection()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Connected..................");
         }
     }
 }

@@ -1,28 +1,24 @@
-﻿
-using AssetSync.BrandshareDAM.Models;
-using AssetSync.BrandshareDAM.Repositories;
-using AssetSync.BrandshareDAMIntegration;
+﻿using AssetSync.BrandshareDAMIntegration;
 using AssetSync.Core;
 using AssetSync.Engine;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace AssetSync.CLI
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            //SyncServcieResolver resolver = new SyncServcieResolver();
-            //ISyncService syncService = resolver.ResolveSyncService();
-            //syncService.Sync();
+            var host = Host.CreateDefaultBuilder(args)
+                .ConfigureServices(services =>
+                {
+                    services.AddTransient<IBrandshareDAMService, BrandshareDAMService>();
+                    services.AddHostedService<SyncWorker>();
+                })
+                .Build();
 
-            BrandshareDAMDBContext context = new BrandshareDAMDBContext();
-            var repository = new GenericRepository<SyncJob>(context);
-
-            repository.GetAllAsync().Wait();
-
-
-            //IBrandshareDAMService brandshareDAMService = new BrandshareDAMManager();
-            //ISyncService syncService = new ForwardSyncService(brandshareDAMService, "123", "123", "123", "123", "123", "123");
+            await host.RunAsync();
         }
     }
 }
