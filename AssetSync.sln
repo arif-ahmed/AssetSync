@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.CLI", "AssetSync.CLI\AssetSync.CLI.csproj", "{CD58CEB7-91FF-4DAE-B37B-17355CE87787}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetSync.CLI", "AssetSync.CLI\AssetSync.CLI.csproj", "{CD58CEB7-91FF-4DAE-B37B-17355CE87787}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.Core", "AssetSync.Core\AssetSync.Core.csproj", "{70E4ED90-8BDA-40AD-8E01-D9C2499BE641}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetSync.Core", "AssetSync.Core\AssetSync.Core.csproj", "{70E4ED90-8BDA-40AD-8E01-D9C2499BE641}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.Engine", "AssetSync.Engine\AssetSync.Engine.csproj", "{1572BE33-0BBC-4588-93A7-B1298AAC30B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetSync.Engine", "AssetSync.Engine\AssetSync.Engine.csproj", "{1572BE33-0BBC-4588-93A7-B1298AAC30B2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integrations", "Integrations", "{13F230E6-9BFE-4915-B817-CED9D592E16C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.BrandshareDAMIntegration", "AssetSync.BrandshareDAMIntegration\AssetSync.BrandshareDAMIntegration.csproj", "{FED748FB-5C26-41EE-8EB9-1AC256EBF112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetSync.BrandshareDAMIntegration", "AssetSync.BrandshareDAMIntegration\AssetSync.BrandshareDAMIntegration.csproj", "{FED748FB-5C26-41EE-8EB9-1AC256EBF112}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BrandshareDAM", "BrandshareDAM", "{E3FEC927-1DD0-4D02-9398-A08CB1A4E701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.BrandshareDAM.Repositories", "AssetSync.BrandshareDAM.Repositories\AssetSync.BrandshareDAM.Repositories.csproj", "{58EBA2C2-5A9E-46C6-BCAD-0A099A31099B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSync.BrandshareDAM.Models", "AssetSync.BrandshareDAM.Models\AssetSync.BrandshareDAM.Models.csproj", "{1A891A06-BC20-4C74-BE72-4DE4F11DF075}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,12 +41,23 @@ Global
 		{FED748FB-5C26-41EE-8EB9-1AC256EBF112}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FED748FB-5C26-41EE-8EB9-1AC256EBF112}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FED748FB-5C26-41EE-8EB9-1AC256EBF112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58EBA2C2-5A9E-46C6-BCAD-0A099A31099B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58EBA2C2-5A9E-46C6-BCAD-0A099A31099B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58EBA2C2-5A9E-46C6-BCAD-0A099A31099B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58EBA2C2-5A9E-46C6-BCAD-0A099A31099B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A891A06-BC20-4C74-BE72-4DE4F11DF075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A891A06-BC20-4C74-BE72-4DE4F11DF075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A891A06-BC20-4C74-BE72-4DE4F11DF075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A891A06-BC20-4C74-BE72-4DE4F11DF075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FED748FB-5C26-41EE-8EB9-1AC256EBF112} = {13F230E6-9BFE-4915-B817-CED9D592E16C}
+		{FED748FB-5C26-41EE-8EB9-1AC256EBF112} = {E3FEC927-1DD0-4D02-9398-A08CB1A4E701}
+		{E3FEC927-1DD0-4D02-9398-A08CB1A4E701} = {13F230E6-9BFE-4915-B817-CED9D592E16C}
+		{58EBA2C2-5A9E-46C6-BCAD-0A099A31099B} = {E3FEC927-1DD0-4D02-9398-A08CB1A4E701}
+		{1A891A06-BC20-4C74-BE72-4DE4F11DF075} = {E3FEC927-1DD0-4D02-9398-A08CB1A4E701}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DE2D6F5-A3B1-4C25-B827-BA53E52C6F8F}

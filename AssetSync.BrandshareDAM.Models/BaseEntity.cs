@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AssetSync.BrandshareDAM.Models
 {
-    public abstract class Entity
+    public abstract class BaseEntity
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

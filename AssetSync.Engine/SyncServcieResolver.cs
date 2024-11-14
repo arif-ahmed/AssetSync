@@ -8,7 +8,7 @@ namespace AssetSync.Engine
     {
         public ISyncService ResolveSyncService()
         {
-            return new ForwardSyncService();
+            return null;
         }
     }
 }

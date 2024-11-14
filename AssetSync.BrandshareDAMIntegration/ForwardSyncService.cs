@@ -14,7 +14,7 @@ namespace AssetSync.BrandshareDAMIntegration
 
         public override void SyncAlgorithm()
         {
-            BrandshareDAMService.GetVolumes();
+            BrandshareDAMService.GetVolumes(SyncJobId);
         }
     }
 }

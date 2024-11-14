@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AssetSync.BrandshareDAM.Models\AssetSync.BrandshareDAM.Models.csproj" />
+    <ProjectReference Include="..\AssetSync.BrandshareDAM.Repositories\AssetSync.BrandshareDAM.Repositories.csproj" />
     <ProjectReference Include="..\AssetSync.BrandshareDAMIntegration\AssetSync.BrandshareDAMIntegration.csproj" />
     <ProjectReference Include="..\AssetSync.Core\AssetSync.Core.csproj" />
   </ItemGroup>
