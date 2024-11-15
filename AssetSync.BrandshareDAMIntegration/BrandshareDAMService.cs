@@ -17,7 +17,11 @@ namespace AssetSync.BrandshareDAMIntegration
 
         public async Task<List<SyncJobDTO>> GetSyncJobs(string machineName)
         {
-            var syncJobs = new List<SyncJobDTO> { };
+            var syncJobs = new List<SyncJobDTO>();
+            syncJobs.Add(new SyncJobDTO { Id = "1", JobName = "Job-01" });
+            syncJobs.Add(new SyncJobDTO { Id = "2", JobName = "Job-02" });
+            syncJobs.Add(new SyncJobDTO { Id = "3", JobName = "Job-03" });
+
             return await Task.FromResult(syncJobs);
         }
 

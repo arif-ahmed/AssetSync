@@ -18,10 +18,12 @@ namespace AssetSync.Engine
                 brandshareDAMService.TestConnection();
 
                 Console.WriteLine($"Machine: {Environment.MachineName}");
+
                 var syncJobs = await brandshareDAMService.GetSyncJobs(Environment.MachineName);
+
                 Parallel.ForEach(syncJobs, (syncJob) =>
                 {
-
+                    Console.WriteLine($"SyncJob: {syncJob.JobName}");
                 });
 
                 await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
